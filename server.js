@@ -62,10 +62,13 @@ app.post('/register', async (req, res) => {
             }).save();
         })
     })
+
+
     return res.redirect('/login');
 });
 
 //login
+//new change
 app.get('/login', async (req, res) => {
 
     const { password } = req.body;
